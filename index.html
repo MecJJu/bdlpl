@@ -335,24 +335,36 @@ body {
   <div id="helpContent">
     <h2>Bandlab Playlist</h2><h5>v.0.1.0 (2026. 01. 18)</h5>
     <p>
+      <br>
       <h4>개요</h4>
-      2024년부터 작업한 밴드랩 곡 중 일부(매우 짧은 스케치 등)만 제외한 플레이리스트입니다.<br>
-      작곡가: Mudan Guto, peled723, Holari Crab<br>
-      웹 제작: Mudan Guto<br>
-      웹 기본 틀은 ChatGPT를 활용하여 2025년 4월 9일 즈음부터 간간이 제작했습니다.<br>
+      • 2024년부터 작업한 밴드랩 곡 중 일부(매우 짧은 스케치 등)만 제외한 플레이리스트입니다.<br>
+      • 작곡가: Mudan Guto, peled723, Holari Crab<br>
+      • 웹 제작: Mudan Guto<br>
+      • 웹 기본 틀은 ChatGPT를 활용하여 2025년 4월 9일 즈음부터 간간이 제작했습니다.<br>
+      • 전체 재생 시간: 3시간 4분 24초(초 미만 절사)<br>
       <br>
       <h4>기능</h4>
       • BG ON/OFF: 앨범 자켓을 배경에 흐리게 띄웁니다. 곡이 바뀔 시 흐려지며 다음 자켓으로 자연스레 바뀝니다.<br>
       • 곡 선택(우측 상단): 원하는 곡을 선택하여 재생합니다.<br>
-      • RANDOM: 버튼이 켜져 있는 경우, 모든 곡을 무작위로 재생합니다.<br>
+      • RANDOM: 버튼이 켜져 있는 경우, 모든 곡을 무작위로 재생합니다. 모든 곡을 다 들으면 셔플 목록이 초기화되어 들었던 곡이 다시 재생될 수 있습니다.<br>
       • AUTO: 버튼이 켜져 있는 경우, 다음 곡을 자동으로 재생합니다.<br>
       • 진행바를 클릭하거나 드래그하여 이동할 수 있습니다.<br>
       • 우측 슬라이드를 조절하여 볼륨을 조절할 수 있습니다.<br>
       • 이전 곡, 재생/일시정지, 다음 곡 버튼을 눌러 기능을 수행할 수 있습니다.<br>
       <br>
+      <h4>작곡가별 곡 수</h4>
+      • Mudan Guto: 29곡 (단독 21곡, 합작 참여 8곡)<br>
+      • peled723: 58곡 (단독 41곡, 합작 참여 17곡)<br>
+      • Holari Crab: 27곡 (단독 15곡, 합작 참여 12곡)<br>
+      • Mudan Guto & peled723: 5곡<br>
+      • Mudan Guto & Holari Crab: 0곡<br>
+      • peled723 & Holari Crab: 9곡<br>
+      • 전원 합작: 3곡<br>
+      <br>
       <h4>참고</h4>
       • 곡 정렬은 ABC 순입니다(대소문자 구분 X).<br>
       • RANDOM 기능을 켠 상태에서는 이전 곡 버튼 사용이 불가합니다.<br>
+      • RANDOM 기능을 켠 상태에서 곡 선택 기능을 이용하면 셔플 목록이 초기화됩니다.<br>
       • mp3 다운로드 시점: 2026. 01. 16. 오후 11:28 (이 이후 업데이트되는 곡들은 수정 필요)<br>
       • bit.ly 주소: https://bit.ly/bandlabpl_mph<br>
       <br>
@@ -388,6 +400,11 @@ body {
       - 1차 리스트(95곡) 전곡 파일명, 이미지 수정 완료<br>
       - 주석 정리<br>
       - 깃허브 배포<br>
+      <br>
+      • v.0.1.1 (2026. 01. 18)<br>
+      - 잘못 수록된 1곡 제외<br>
+      - 랜덤 기능 설명 추가 및 수정<br>
+      - 작곡가별 곡 수, 전체 재생 시간 표기<br>
       <br>
       Copyright 2024. Mudan Guto, peled723, Holari Crab All rights reserved.
     </p>
@@ -469,7 +486,6 @@ const playlist = [
   { file: '비퍼 1집 Track 14.mp3', image: 'default_behindfirst.jpg', prod: 'Holari Crab', title: '비퍼 1집 Track 14' },
   { file: '빨개익은 파프리카 한소끔.mp3', image: '빨개익은 파프리카 한소끔.jpg', prod: 'peled723', title: '빨개익은 파프리카 한소끔' },
   { file: '새드가이.mp3', image: '새드가이.jpg', prod: 'Holari Crab', title: '새드가이' },
-  { file: '샘플링연습.mp3', image: '샘플링연습.jpg', prod: 'Mudan Guto, peled723', title: '샘플링연습' },
   { file: '수재(殊才).mp3', image: '수재(殊才).jpg', prod: 'peled723', title: '수재(殊才)' },
   { file: '쌤플러 만지기.mp3', image: 'default_mudanguto.jpg', prod: 'Mudan Guto', title: '쌤플러 만지기' },
   { file: '오고곡.mp3', image: 'default_peled723.jpg', prod: 'peled723', title: '오고곡' },
